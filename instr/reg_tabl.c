@@ -174,16 +174,6 @@ __s16 get_gp_reg_size(__u8 *name) {
 	return (IS_GENREG(reg->t)) ? GET_REG_SZ(reg->t) : 0;
 }
 
-
-/**
- *	Made using THC parser
- *
- *	time of creation: Thu Jan 25 15:55:53
- *	fmt: enum
- **/
-
-/** Begin **/
-
 reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="AL", .t=GP_8, .v=F_REG 	|	0x000 },	/*                            "@>                                  */
 	{ .name ="AX", .t=GP_16, .v=F_REG 	|	0x100 },	/*                             M@M                                 */
