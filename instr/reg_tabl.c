@@ -189,7 +189,7 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="AX", .t=GP_16, .v=F_REG 	|	0x100 },	/*                             M@M                                 */
 	{ .name ="EAX", .t=GP_32, .v=F_REG 	|	0x200 },	/*                             @@@J                                */
 	{ .name ="RAX", .t=GP_64, .v=F_REG 	|	0x300 },	/*                          |@ @@@O"@>                             */
-	{ .name ="ST0", .t=FPU_X86, .v=F_REG|	0x400 },	/*                          |@"J@@ @@                              */
+	{ .name ="ST0", .t=FPU_X86, .v=F_REG	|	0x400 },	/*                          |@"J@@ @@                              */
 	{ .name ="MMX0", .t=MMX, .v=F_REG 	|	0x500 },	/*                       O> M@">@c @@                              */
 	{ .name ="XMM0", .t=XMM, .v=F_REG 	|	0x600 },	/*                        @@M@@O@-I@@                              */
 	{ .name ="YMM0", .t=YMM, .v=F_REG 	|	0x700 },	/*                       "@MI@@@@@@@M                              */
@@ -200,7 +200,7 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="CX", .t=GP_16, .v=F_REG 	|	0x101 },	/*                     {M-@@@@@@@@@                                */
 	{ .name ="ECX", .t=GP_32, .v=F_REG 	|	0x201 },	/*                     I@@@@@@@@M"                                 */
 	{ .name ="RCX", .t=GP_64, .v=F_REG 	|	0x301 },	/*                      @@@@@-Ic                                   */
-	{ .name ="ST1", .t=FPU_X86, .v=F_REG|	0x401 },	/*                     {@@@@M-                                     */
+	{ .name ="ST1", .t=FPU_X86, .v=F_REG	|	0x401 },	/*                     {@@@@M-                                     */
 	{ .name ="MMX1", .t=MMX, .v=F_REG 	|	0x501 },	/*                    MM@@@@I"                                     */
 	{ .name ="XMM1", .t=XMM, .v=F_REG 	|	0x601 },	/*                    >@@@@@@d                                     */
 	{ .name ="YMM1", .t=YMM, .v=F_REG 	|	0x701 },	/*                     M@@@@@  {                                   */
@@ -211,7 +211,7 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="DX", .t=GP_16, .v=F_REG 	|	0x102 },	/*                      "ccJ@@@@@@@@>                              */
 	{ .name ="EDX", .t=GP_32, .v=F_REG 	|	0x202 },	/*                          "@@@@@@@@d                             */
 	{ .name ="RDX", .t=GP_64, .v=F_REG 	|	0x302 },	/*                        "M@@@@@@@@@@M                            */
-	{ .name ="ST2", .t=FPU_X86, .v=F_REG|	0x402 },	/*                             {@@@@@@@O                           */
+	{ .name ="ST2", .t=FPU_X86, .v=F_REG	|	0x402 },	/*                             {@@@@@@@O                           */
 	{ .name ="MMX2", .t=MMX, .v=F_REG 	|	0x502 },	/*                              {@@@@@@@                           */
 	{ .name ="XMM2", .t=XMM, .v=F_REG 	|	0x602 },	/*                           OOj@@@@@@@@{                          */
 	{ .name ="YMM2", .t=YMM, .v=F_REG 	|	0x702 },	/*                            -@@@@@@@@@|                          */
@@ -222,7 +222,7 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="BX", .t=GP_16, .v=F_REG 	|	0x103 },	/*                    M@@@@@@@@@@@@@-                              */
 	{ .name ="EBX", .t=GP_32, .v=F_REG 	|	0x203 },	/*               J    @@@@@@@@@@@@-                                */
 	{ .name ="RBX", .t=GP_64, .v=F_REG 	|	0x303 },	/*               @@cd@@@@@@@@@@M                                   */
-	{ .name ="ST3", .t=FPU_X86, .v=F_REG|	0x403 },	/*               "@@@@@@@@@@@{          ">                         */
+	{ .name ="ST3", .t=FPU_X86, .v=F_REG	|	0x403 },	/*               "@@@@@@@@@@@{          ">                         */
 	{ .name ="MMX3", .t=MMX, .v=F_REG 	|	0x503 },	/*                M@@@@@@@@I             -M                        */
 	{ .name ="XMM3", .t=XMM, .v=F_REG 	|	0x603 },	/*            |  >@@@@@@@M         "c-M@@@- I                      */
 	{ .name ="YMM3", .t=YMM, .v=F_REG 	|	0x703 },	/*            -@@@@@@@@@@     @  "@@@a@@@j"cM                      */
@@ -234,7 +234,7 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="SP", .t=GP_16, .v=F_REG 	|	0x104 },	/*                 c@@@@@@@@@@@@@M"  @@@@@M                        */
 	{ .name ="ESP", .t=GP_32, .v=F_REG 	|	0x204 },	/*                IJO> J@@@@@@@@@@@@M@@@@@>                        */
 	{ .name ="RSP", .t=GP_64, .v=F_REG 	|	0x304 },	/*                      a@@@@@@@@@@@@@@@@"                         */
-	{ .name ="ST4", .t=FPU_X86, .v=F_REG|	0x404 },	/*                    O@@@> O@@@@@@@@@@                            */
+	{ .name ="ST4", .t=FPU_X86, .v=F_REG	|	0x404 },	/*                    O@@@> O@@@@@@@@@@                            */
 	{ .name ="MMX4", .t=MMX, .v=F_REG 	|	0x504 },	/*                           J@@@@@@@@@@                           */
 	{ .name ="XMM4", .t=XMM, .v=F_REG 	|	0x604 },	/*                         a@@@a@@@@@@@@|                          */
 	{ .name ="YMM4", .t=YMM, .v=F_REG 	|	0x704 },	/*                              "@@@@@@@a                          */
@@ -246,7 +246,7 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="BP", .t=GP_16, .v=F_REG 	|	0x105 },	/*                    a@@@@@@@@@@@@@@M                             */
 	{ .name ="EBP", .t=GP_32, .v=F_REG 	|	0x205 },	/*               cI  I@@@@@@@@@@@@@@@M   I                         */
 	{ .name ="RBP", .t=GP_64, .v=F_REG 	|	0x305 },	/*               a@@@@@@@@@@@@@@@@@@@@@M@@                         */
-	{ .name ="ST5", .t=FPU_X86, .v=F_REG|	0x405 },	/*                M@@@@@@@@@@M"  "a@@a> j@                         */
+	{ .name ="ST5", .t=FPU_X86, .v=F_REG	|	0x405 },	/*                M@@@@@@@@@@M"  "a@@a> j@                         */
 	{ .name ="MMX5", .t=MMX, .v=F_REG 	|	0x505 },	/*                @@@@@@@@@O     --     O@                         */
 	{ .name ="XMM5", .t=XMM, .v=F_REG 	|	0x605 },	/*           "{  O@@@@@@@@     Id j@d   @O@@J@>                    */
 	{ .name ="YMM5", .t=YMM, .v=F_REG 	|	0x705 },	/*            c@@@@@@@@@@-      "dMj@M j@@O  a                     */
@@ -258,7 +258,7 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="SI", .t=GP_16, .v=F_REG 	|	0x106 },	/*                 {@@@@@@@@@@@@@@>                                */
 	{ .name ="ESI", .t=GP_32, .v=F_REG 	|	0x206 },	/*               "a@@O @@@@@@@@@@@@@-                              */
 	{ .name ="RSI", .t=GP_64, .v=F_REG 	|	0x306 },	/*                      M@@@@@@@@@@@@@                             */
-	{ .name ="ST6", .t=FPU_X86, .v=F_REG|	0x406 },	/*                    "a@@MI@@@@@@@@@@@"                           */
+	{ .name ="ST6", .t=FPU_X86, .v=F_REG	|	0x406 },	/*                    "a@@MI@@@@@@@@@@@"                           */
 	{ .name ="MMX6", .t=MMX, .v=F_REG 	|	0x506 },	/*                           c@@@@@@@@@@                           */
 	{ .name ="XMM6", .t=XMM, .v=F_REG 	|	0x606 },	/*                         "d@@@@@@@@@@@J                          */
 	{ .name ="YMM6", .t=YMM, .v=F_REG 	|	0x706 },	/*                              {@@@@@@@@                          */
@@ -269,7 +269,7 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="DI", .t=GP_16, .v=F_REG 	|	0x107 },	/*                    M@" O@@@@@@@@@@@c                            */
 	{ .name ="EDI", .t=GP_32, .v=F_REG 	|	0x207 },	/*                    a@@@@@@@@@@@@@@                              */
 	{ .name ="RDI", .t=GP_64, .v=F_REG 	|	0x307 },	/*               J>  -@@@@@@@@@@@@@"                               */
-	{ .name ="ST7", .t=FPU_X86, .v=F_REG|	0x407 },	/*               a@@@@@@@@@@@@@@a                                  */
+	{ .name ="ST7", .t=FPU_X86, .v=F_REG	|	0x407 },	/*               a@@@@@@@@@@@@@@a                                  */
 	{ .name ="MMX7", .t=MMX, .v=F_REG 	|	0x507 },	/*                M@@@@@@@@@@@-          a"                        */
 	{ .name ="XMM7", .t=XMM, .v=F_REG 	|	0x607 },	/*                @@@@@@@@@M             cM                        */
 	{ .name ="YMM7", .t=YMM, .v=F_REG 	|	0x707 },	/*           "J  a@@@@@@@@I        j@M@@@@  c                      */
@@ -296,63 +296,63 @@ reg_st reg_tabl[168] = (reg_st[168]){
 	{ .name ="CR9", .t=CTL32, .v=F_REG 	|	0x909 },	/*               a@@@@@@@@@@@@@@@@@@@@@@@@                         */
 	{ .name ="DR9", .t=DBG32, .v=F_REG 	|	0xa09 },	/*                M@@@@@@@@@@@-   >jjI  |@                         */
 	{ .name ="R10L", .t=GP_8, .v=F_REG 	|	0x00a },	/*                @@@@@@@@@M    -MM-    a@ -cI                     */
-	{ .name ="R10W", .t=GP_16, .v=F_REG |	0x10a },	/*           "O "a@@@@@@@@>    >I "@@   @a@a d-                    */
-	{ .name ="R10D", .t=GP_32, .v=F_REG |	0x20a },	/*            {@@@@@@@@@@{      j@@@@@>O@@>  O                     */
+	{ .name ="R10W", .t=GP_16, .v=F_REG 	|	0x10a },	/*           "O "a@@@@@@@@>    >I "@@   @a@a d-                    */
+	{ .name ="R10D", .t=GP_32, .v=F_REG 	|	0x20a },	/*            {@@@@@@@@@@{      j@@@@@>O@@>  O                     */
 	{ .name ="R10", .t=GP_64, .v=F_REG 	|	0x30a },	/*               @@@@@@@@"     -a  {@@@@a                          */
 	{ .name ="MMX2", .t=MMX, .v=F_REG 	|	0x50a },	/*               a@@@@@@@d      " @M                               */
 	{ .name ="XMM10", .t=XMM, .v=F_REG 	|	0x60a },	/*              {@@@@@@@@@M       JJ                               */
 	{ .name ="YMM10", .t=YMM, .v=F_REG 	|	0x70a },	/*             IdMM@@@@@@@@@a                                      */
 	{ .name ="SS", .t=SEG16, .v=F_REG 	|	0x80a },	/*                 j@@@@@@@@@@@-                                   */
-	{ .name ="CR10", .t=CTL32, .v=F_REG |	0x90a },	/*                 c@@@@@@@@@@@@@a                                 */
-	{ .name ="DR10", .t=DBG32, .v=F_REG |	0xa0a },	/*                JMa|I@@@@@@@@@@@@M"                              */
+	{ .name ="CR10", .t=CTL32, .v=F_REG 	|	0x90a },	/*                 c@@@@@@@@@@@@@a                                 */
+	{ .name ="DR10", .t=DBG32, .v=F_REG 	|	0xa0a },	/*                JMa|I@@@@@@@@@@@@M"                              */
 	{ .name ="R11L", .t=GP_8, .v=F_REG 	|	0x00b },	/*                      M@@@@@@@@@@@@O                             */
-	{ .name ="R11W", .t=GP_16, .v=F_REG |	0x10b },	/*                    -@@@JI@@@@@@@@@@@                            */
-	{ .name ="R11D", .t=GP_32, .v=F_REG |	0x20b },	/*                           c@@@@@@@@@a                           */
+	{ .name ="R11W", .t=GP_16, .v=F_REG 	|	0x10b },	/*                    -@@@JI@@@@@@@@@@@                            */
+	{ .name ="R11D", .t=GP_32, .v=F_REG 	|	0x20b },	/*                           c@@@@@@@@@a                           */
 	{ .name ="R11", .t=GP_64, .v=F_REG 	|	0x30b },	/*                         -@@@@@@@@@@@@>                          */
 	{ .name ="MMX3", .t=MMX, .v=F_REG 	|	0x50b },	/*                              I@@@@@@@d                          */
 	{ .name ="XMM11", .t=XMM, .v=F_REG 	|	0x60b },	/*                               @@@@@@@a                          */
 	{ .name ="YMM11", .t=YMM, .v=F_REG 	|	0x70b },	/*                           @> I@@@@@@@J                          */
 	{ .name ="DS", .t=SEG16, .v=F_REG 	|	0x80b },	/*                           j@@@@@@@@@@I                          */
-	{ .name ="CR11", .t=CTL32, .v=F_REG |	0x90b },	/*                        c    @@@@@@@@M                           */
-	{ .name ="DR11", .t=DBG32, .v=F_REG |	0xa0b },	/*                        @a">@@@@@@@@@                            */
+	{ .name ="CR11", .t=CTL32, .v=F_REG 	|	0x90b },	/*                        c    @@@@@@@@M                           */
+	{ .name ="DR11", .t=DBG32, .v=F_REG	|	0xa0b },	/*                        @a">@@@@@@@@@                            */
 	{ .name ="R12L", .t=GP_8, .v=F_REG 	|	0x00c },	/*                        M@@@@@@@@@@@                             */
-	{ .name ="R12W", .t=GP_16, .v=F_REG |	0x10c },	/*                     >  I@@@@@@@@@a                              */
-	{ .name ="R12D", .t=GP_32, .v=F_REG |	0x20c },	/*                     @@@@@@@@@@@@I                               */
+	{ .name ="R12W", .t=GP_16, .v=F_REG 	|	0x10c },	/*                     >  I@@@@@@@@@a                              */
+	{ .name ="R12D", .t=GP_32, .v=F_REG 	|	0x20c },	/*                     @@@@@@@@@@@@I                               */
 	{ .name ="R12", .t=GP_64, .v=F_REG 	|	0x30c },	/*         >M@I         M@@@@@@@@J                                 */
 	{ .name ="MMX4", .t=MMX, .v=F_REG 	|	0x50c },	/*        J@| O@     @JO@@@@@@@@"                                  */
 	{ .name ="XMM12", .t=XMM, .v=F_REG 	|	0x60c },	/*           I""@I " >@@@@@@@@@                                    */
 	{ .name ="YMM12", .t=YMM, .v=F_REG 	|	0x70c },	/*          IO   @> Mj"@@@@@@@>                                    */
 	{ .name ="FS", .t=SEG16, .v=F_REG 	|	0x80c },	/*           ad  "@  @@@@@@@@@d@a                                  */
-	{ .name ="CR12", .t=CTL32, .v=F_REG |	0x90c },	/*     I      I@@M@d{@@@@@@@@@@-d                                  */
-	{ .name ="DR12", .t=DBG32, .v=F_REG |	0xa0c },	/*     a          >@ @@@@@@@@@@>                                   */
+	{ .name ="CR12", .t=CTL32, .v=F_REG 	|	0x90c },	/*     I      I@@M@d{@@@@@@@@@@-d                                  */
+	{ .name ="DR12", .t=DBG32, .v=F_REG 	|	0xa0c },	/*     a          >@ @@@@@@@@@@>                                   */
 	{ .name ="R13L", .t=GP_8, .v=F_REG 	|	0x00d },	/* |    {J"       @@@@@@@@@@@@O                                    */
-	{ .name ="R13W", .t=GP_16, .v=F_REG |	0x10d },	/*  c"       >aI I@@I@ @@@@@@@O                                    */
-	{ .name ="R13D", .t=GP_32, .v=F_REG |	0x20d },	/*     "|Oa>    O a@a|@@|  J@@@I                                   */
+	{ .name ="R13W", .t=GP_16, .v=F_REG	|	0x10d },	/*  c"       >aI I@@I@ @@@@@@@O                                    */
+	{ .name ="R13D", .t=GP_32, .v=F_REG 	|	0x20d },	/*     "|Oa>    O a@a|@@|  J@@@I                                   */
 	{ .name ="R13", .t=GP_64, .v=F_REG 	|	0x30d },	/*          M   j   I@@      |@@                                   */
 	{ .name ="MMX5", .t=MMX, .v=F_REG 	|	0x50d },	/*          J   d   >@@MI    {c@{                                  */
 	{ .name ="XMM13", .t=XMM, .v=F_REG 	|	0x60d },	/*         d   a    M@          @"                                 */
 	{ .name ="YMM13", .t=YMM, .v=F_REG 	|	0x70d },	/*        d   a     M@          @@I                                */
 	{ .name ="GS", .t=SEG16, .v=F_REG 	|	0x80d },	/*       J   J   ""j@@@@d        J@M|                              */
-	{ .name ="CR13", .t=CTL32, .v=F_REG |	0x90d },	/*      I   I"  ac{@@@c           {cI                              */
-	{ .name ="DR13", .t=DBG32, .v=F_REG |	0xa0d },	/*      O   a    @@@@@@O                                           */
+	{ .name ="CR13", .t=CTL32, .v=F_REG 	|	0x90d },	/*      I   I"  ac{@@@c           {cI                              */
+	{ .name ="DR13", .t=DBG32, .v=F_REG 	|	0xa0d },	/*      O   a    @@@@@@O                                           */
 	{ .name ="R14L", .t=GP_8, .v=F_REG 	|	0x00e },	/*      J   |    Id@@@O                                            */
-	{ .name ="R14W", .t=GP_16, .v=F_REG |	0x10e },	/*      J    "a>Ija>@                                              */
-	{ .name ="R14D", .t=GP_32, .v=F_REG |	0x20e },	/*       |j     c{                                                 */
+	{ .name ="R14W", .t=GP_16, .v=F_REG 	|	0x10e },	/*      J    "a>Ija>@                                              */
+	{ .name ="R14D", .t=GP_32, .v=F_REG 	|	0x20e },	/*       |j     c{                                                 */
 	{ .name ="R14", .t=GP_64, .v=F_REG 	|	0x30e },
 	{ .name ="MMX6", .t=MMX, .v=F_REG 	|	0x50e },
 	{ .name ="XMM14", .t=XMM, .v=F_REG 	|	0x60e },
 	{ .name ="YMM14", .t=YMM, .v=F_REG 	|	0x70e },
-	{ .name ="CR14", .t=CTL32, .v=F_REG |	0x90e },
-	{ .name ="DR14", .t=DBG32, .v=F_REG |	0xa0e },
+	{ .name ="CR14", .t=CTL32, .v=F_REG 	|	0x90e },
+	{ .name ="DR14", .t=DBG32, .v=F_REG 	|	0xa0e },
 	{ .name ="R15L", .t=GP_8, .v=F_REG 	|	0x00f },
-	{ .name ="R15W", .t=GP_16, .v=F_REG |	0x10f },
-	{ .name ="R15D", .t=GP_32, .v=F_REG |	0x20f },
+	{ .name ="R15W", .t=GP_16, .v=F_REG 	|	0x10f },
+	{ .name ="R15D", .t=GP_32, .v=F_REG 	|	0x20f },
 	{ .name ="R15", .t=GP_64, .v=F_REG 	|	0x30f },
 	{ .name ="MMX7", .t=MMX, .v=F_REG 	|	0x50f },
 	{ .name ="XMM15", .t=XMM, .v=F_REG 	|	0x60f },
 	{ .name ="YMM15", .t=YMM, .v=F_REG 	|	0x70f },
-	{ .name ="CR15", .t=CTL32, .v=F_REG |	0x90f },
-	{ .name ="DR15", .t=DBG32, .v=F_REG |	0xa0f },
+	{ .name ="CR15", .t=CTL32, .v=F_REG	 |	0x90f },
+	{ .name ="DR15", .t=DBG32, .v=F_REG 	|	0xa0f },
 };
 
 
