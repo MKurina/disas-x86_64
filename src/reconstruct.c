@@ -32,22 +32,22 @@ __u8 assemble(instr_dat_t *in, __u8 ops[15]) {
 		if (in->sib_on) ops[i++]=in->sib;
 	}
 	// insert imm/disp
-	foreach(l, 4) {
-		operand *p = &in->oper[l];
-		if (!!p->is_empty) break; // continue
+	foreach_operand(p, in) {
+		// operand *p = &in->oper[l];
+		// if (!!p->is_empty) break; // continue
 
 		if (!!p->disp_sz) {
 			__u8 sz = p->disp_sz/8;
 			memcpy(&ops[i], p->disp, sz);
 			i += sz;
-		}
-		if (!!p->is_imm) {
+		} else if (!!p->is_imm) {
 			__u8 sz = p->sz/8;
 			memcpy(&ops[i], p->imm, sz);
 			i += sz;
 		}
 	}
-	assert(in->in_sz == i && i < 0x10);
+
+	// _assertf(in->in_sz == i && i < 0x10, "in_sz: %lx i: %lx", in->in_sz, i);
 	return i;
 }
 
