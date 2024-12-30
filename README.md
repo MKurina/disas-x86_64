@@ -1,5 +1,5 @@
 # disas-x86_64
-A disassembler for (x86_64 arch). RING0 instructions are left out.
+A disassembler for (x86_64). without ```ring0``` instructions.
 
 ## Resources
 [x86 instruction reference](http://ref.x86asm.net/geek64.html) <br>
